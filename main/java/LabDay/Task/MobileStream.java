@@ -18,10 +18,10 @@ public class MobileStream {
 		System.out.println("Enter No of Products : ");
 		int no = scan.nextInt();
 		
-		//Creating Array List to store Student data/Student Object
+		//Creating Array List to store Product data/Product Object
 		ArrayList <MobileModel> productList = new ArrayList<MobileModel>();
 		
-		//For loop to take input student data until all student object in not stored
+		//For loop to take input product data until all product object is not stored
 		for(int i = 1;i<=no;i++) {
 			System.out.println("Enter "+i+" Company Name : ");
 			String company = scan.next();
