@@ -34,11 +34,14 @@ public class SumOfEvenLambda {
 			//Passing i in the ArrayList to store numbers in list
 			number.add(i);
 			}
+			
+			// demonstration of filter method and collect method
+			// to collect and print all the even value from Array List
 			List<Integer> evenList = number.stream().filter(x->x%2==0).collect(Collectors.toList());
 			System.out.println("\nEven Values b/w  1-"+no+" : "+evenList);
 			
 			// demonstration of filter method and reduce method
-			// to print all the even value from Array List
+			// to print sum of the even value from Array List
 			int result = number.stream().filter(x->x%2==0).reduce(0,(y,x)-> y+x);
 			System.out.println("\nSum of Even values : "+result);
 			}
